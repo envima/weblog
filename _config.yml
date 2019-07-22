@@ -17,13 +17,13 @@ title: Environmental Informatics Marburg
 description: > # this means to ignore newlines until "baseurl:"
   Blogging and information platform of Environmental Informatics Marburg 
 baseurl: "/weblog"
-url: "https://gisma.github.io"
+url: "https://envima.github.io"
 permalink: /:year/:month/:day/:title
-repository: gisma/giswerk.org
+repository: envima/weblog
 paginate: 5
 
 # MatJek specific configurations
-github_profile: "https://github.com/gisma"
+github_profile: "https://github.com/envima"
 user: "EI Marburg"
 user_email: "umweltinformatik@staff.uni-marburg.de"
 google_tracking_id: "UA-96359860-1"
