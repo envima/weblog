@@ -1,5 +1,10 @@
-Using FFN in R
-================
+---
+title: Using Python modues in R
+layout: post
+tags: R python marvin
+categories: tutorial
+---
+
 
 ## Import Python moduels in R
 
