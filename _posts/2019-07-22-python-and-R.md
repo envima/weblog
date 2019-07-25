@@ -5,8 +5,9 @@ tags: R python marvin
 categories: tutorial
 ---
 
+Integration of Python modules in a R workflow.
 
-## Import Python moduels in R
+## Import Python modules in R
 
 With the `reticulate` package you can import python modules in R. The
 variable np stores the python functions that come with the numpy
@@ -20,17 +21,16 @@ np <- import("numpy")
 np$absolute(-60)
 ```
 
-    ## [1] 60
 
 ## Facet Flow Networks
 
-Facet flow networks performs a water accumulation alogorithm directly on
+Facet flow networks performs a water accumulation algorithm directly on
 a pointcloud. The package and details can be found on Github:
 <https://github.com/Rheinwalt/FacetFlowNetwork>. Once the module is
 installed we can use reticulate in R to incorporate it into a workflow
 with other R Packages like lidR.
 
-The package has only one function called `ffn`. So if we create a import
+The package has only one function called `ffn`. So if we create an import
 of the package in the variable ffn, we can use the function with
 `ffn$ffn`.
 
@@ -58,7 +58,7 @@ flow$sca() %>%
   head()
 ```
 
-    ## [1] 0.109471080 7.832941793 0.068346767 0.011949873 0.003979073 0.105501005
+>	 [1] 0.109471080 7.832941793 0.068346767 0.011949873 0.003979073 0.105501005
 
 ``` r
 # get the centroids of the facet
@@ -66,13 +66,13 @@ flow$facet_centroids() %>%
   head()
 ```
 
-    ##          [,1]    [,2]     [,3]
-    ## [1,] 477798.6 5632226 330.2560
-    ## [2,] 477800.1 5632226 331.1307
-    ## [3,] 477893.5 5632169 337.3837
-    ## [4,] 477894.0 5632171 338.3153
-    ## [5,] 477798.4 5632226 331.0437
-    ## [6,] 477798.4 5632226 330.5493
+>              [,1]    [,2]     [,3]
+>     [1,] 477798.6 5632226 330.2560
+>     [2,] 477800.1 5632226 331.1307
+>     [3,] 477893.5 5632169 337.3837
+>     [4,] 477894.0 5632171 338.3153
+>     [5,] 477798.4 5632226 331.0437
+>     [6,] 477798.4 5632226 330.5493
 
 You can use `ggplot2` now to visualize in familiar R grammar.
 
@@ -91,4 +91,4 @@ ggplot(fc, aes(x, y, color = sca))+
   scale_color_gradientn(colors = viridis(50), trans = "log")
 ```
 
-![](../assets/img/facetFlow.png)
+![]({{site.url}}{{site.baseurl}}/assets/img/facetFlow.png)
