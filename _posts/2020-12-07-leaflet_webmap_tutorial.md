@@ -6,6 +6,8 @@ tags: gdal leaflet
 categories: tutorial
 --- 
 
+gdal2tiles and rudimentary leaflet tutorial
+
 # Raster tile layers
 
 1. Use QGIS to create a raster layer with your desired color scheme

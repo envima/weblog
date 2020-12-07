@@ -3,11 +3,10 @@ title: Comparison of UAV Cameras
 layout: post
 tags: UAV money
 date: 2020-12-01 9:00
-categories: info
 ---
 
 
-# UAS Multispectral Camera Comparisons
+UAS Multispectral Camera Comparisons
 
 
 ## Micasense RedEdge
